@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Food Delivery Project | Ajit Bassapuri</title>
+  <link rel="stylesheet" href="food.css" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <h2 class="logo">My Portfolio</h2>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="components/Ajit_Java_Developer_Resume.pdf.pdf" download>Resume</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#about">About Me</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Food Delivery Web Application</h1>
+      <p>Java MVC Project using Servlets, JSP, JDBC, and MySQL</p>
+      <a href="#overview" class="btn">Explore Project</a>
+    </div>
+  </header>
+
+  <!-- Project Overview -->
+  <section id="overview" class="project-overview">
+    <h2>Overview</h2>
+    <p>
+      This Food Delivery Web Application was built as part of my Java Full Stack development journey.  
+      It demonstrates the use of <strong>Servlets, JSP, JDBC, and MVC architecture</strong> to build a
+      responsive and functional web application.
+    </p>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <h2>Key Features</h2>
+    <div class="timeline">
+      <div class="timeline-item left">
+        <div class="content">
+          <span class="icon">👤</span>
+          <h3>User Authentication</h3>
+          <p>Secure Registration & Login with session handling.</p>
+        </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="content">
+          <span class="icon">🍔</span>
+          <h3>Food Menu</h3>
+          <p>Browse categories and add meals to your cart.</p>
+        </div>
+      </div>
+      <div class="timeline-item left">
+        <div class="content">
+          <span class="icon">🛒</span>
+          <h3>Cart & Orders</h3>
+          <p>Place orders and track them with order history.</p>
+        </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="content">
+          <span class="icon">🛠️</span>
+          <h3>Admin Panel</h3>
+          <p>Admins can add, update, and remove food items.</p>
+        </div>
+      </div>
+      <div class="timeline-item left">
+        <div class="content">
+          <span class="icon">💾</span>
+          <h3>Database Integration</h3>
+          <p>Full MySQL support using JDBC for persistence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo Video Section -->
+  <section class="demo-video">
+    <h2>Project Demo</h2>
+    <div class="video-wrapper">
+      <video controls>
+        <source src="components/foodapp.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <!-- Screenshots Section -->
+  <section class="screenshots">
+    <h2>Screenshots</h2>
+    <div class="screenshot-grid">
+      <div class="screenshot-card">
+        <img src="components/login.png" alt="Login Page" onclick="openLightbox(this)">
+        <p>Login Page</p>
+      </div>
+      <div class="screenshot-card">
+        <img src="components/menuu.png" alt="Menu Page" onclick="openLightbox(this)">
+        <p>Menu Page</p>
+      </div>
+      <div class="screenshot-card">
+        <img src="components/cart.png" alt="Cart Page" onclick="openLightbox(this)">
+        <p>Cart Page</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="">
+  </div>
+
+  <!-- GitHub Section -->
+  <section class="github-link">
+    <h2>View on GitHub</h2>
+    <p> 
+      <strong>You can check out the complete source code on my GitHub profile: </strong>
+    </p>
+    <a href="https://github.com/AjitBassapuri" class="btn" target="_blank">GitHub Repository</a>
+  </section>
+
+  <!-- Tech Stack Section -->
+  <section class="tech-stack">
+    <h2>Technologies Used</h2>
+    <div class="stack-grid">
+      <div class="stack-item">Java</div>
+      <div class="stack-item">Servlets & JSP</div>
+      <div class="stack-item">JDBC</div>
+      <div class="stack-item">MySQL</div>
+      <div class="stack-item">HTML, CSS</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ajit Bassapuri. All rights reserved.</p>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/ajit-bassapuri-56250b339/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/AjitBassapuri" target="_blank">GitHub</a>
+      <a href="https://x.com/Ajit_S_B_09" target="_blank">Twitter</a>
+    </div>
+  </footer>
+
+  <!-- JS for Lightbox -->
+  <script>
+    function openLightbox(img) {
+      document.getElementById("lightbox").style.display = "flex";
+      document.getElementById("lightbox-img").src = img.src;
+    }
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+  </script>
+</body>
+</html>
